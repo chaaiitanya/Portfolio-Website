@@ -59,7 +59,8 @@ const Work = () => {
             { name: "Churn Prediction System", category: "Predictive Modeling", tools: "Python, Scikit-learn, Pandas, SQL", img: "/images/churn_prediction.png" },
             { name: "Fintech Anomaly Detection", category: "Machine Learning", tools: "Python, Docker, CI/CD", img: "/images/fintech_anomaly.png" },
             { name: "Text-to-SQL Interface", category: "NLP & LLMs", tools: "LLM, Python, SQL", img: "/images/text_to_sql.png" },
-            { name: "Document Ingestion Pipeline", category: "Data Engineering", tools: "Apache Kafka, Vector Embeddings", img: "/images/document_ingestion.png" }
+            { name: "Document Ingestion Pipeline", category: "Data Engineering", tools: "Apache Kafka, Vector Embeddings", img: "/images/document_ingestion.png" },
+            { name: "MCP Audit", category: "Security & CLI Tools", tools: "Python, Typer, Pydantic, SARIF", img: "/images/mcp_audit.png", link: "https://github.com/chaaiitanya/mcp-audit" }
           ].map((project, index) => (
             <div className="work-box" key={index}>
               <div className="work-info">
@@ -73,7 +74,7 @@ const Work = () => {
                 <h4>Tools and features</h4>
                 <p>{project.tools}</p>
               </div>
-              <WorkImage image={project.img} alt={project.name} />
+              <WorkImage image={project.img} alt={project.name} link={project.link} />
             </div>
           ))}
         </div>
