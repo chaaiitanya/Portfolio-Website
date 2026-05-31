@@ -1,13 +1,9 @@
 .techstack-categories {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -38%);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   max-width: 920px;
-  width: 90%;
+  width: 100%;
 }
 
 .techstack-category {
@@ -43,20 +39,9 @@
   letter-spacing: 0.4px;
 }
 
-@media screen and (max-width: 1300px) {
-  .techstack-categories {
-    max-width: 800px;
-  }
-}
-
 @media screen and (max-width: 1100px) {
   .techstack-categories {
     grid-template-columns: 1fr;
     max-width: 500px;
-    transform: translate(-50%, -45%);
-  }
-  .techstack h2 {
-    font-size: 50px;
-    top: 80px;
   }
 }
