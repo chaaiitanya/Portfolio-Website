@@ -144,6 +144,44 @@ const WhatIDo = () => {
               <div className="what-arrow"></div>
             </div>
           </div>
+          <div
+            className="what-content what-noTouch"
+            ref={(el) => setRef(el, 2)}
+          >
+            <div className="what-border1">
+              <svg height="100%">
+                <line
+                  x1="0"
+                  y1="100%"
+                  x2="100%"
+                  y2="100%"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeDasharray="6,6"
+                />
+              </svg>
+            </div>
+            <div className="what-corner"></div>
+            <div className="what-content-in">
+              <h3>AGENT EVALUATION & QA</h3>
+              <h4>Description</h4>
+              <p>
+                Designing LLM-as-judge frameworks, ground-truth datasets, and CI-integrated regression suites to benchmark and maintain agentic AI system quality at scale.
+              </p>
+              <h5>Skillset & tools</h5>
+              <div className="what-content-flex">
+                <div className="what-tags">LangSmith</div>
+                <div className="what-tags">Benchmarking Pipelines</div>
+                <div className="what-tags">KPI Design</div>
+                <div className="what-tags">TDD</div>
+                <div className="what-tags">Failure Mode Analysis</div>
+                <div className="what-tags">ROUGE / F1</div>
+                <div className="what-tags">Hallucination Rate</div>
+                <div className="what-tags">Pytest</div>
+              </div>
+              <div className="what-arrow"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

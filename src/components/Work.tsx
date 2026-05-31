@@ -54,12 +54,12 @@ const Work = () => {
         </h2>
         <div className="work-flex">
           {[
-            { name: "Multi-Agent AI Platform", category: "LLM Agents & RAG", tools: "LangGraph, Python, SQLite, Docker", img: "/images/multi_agent.png" },
-            { name: "High-Throughput ML Inference", category: "MLOps", tools: "NVIDIA Triton, K8s, Kafka, Redis", img: "/images/ml_inference.png" },
-            { name: "Churn Prediction System", category: "Predictive Modeling", tools: "Python, Scikit-learn, Pandas, SQL", img: "/images/churn_prediction.png" },
-            { name: "Fintech Anomaly Detection", category: "Machine Learning", tools: "Python, Docker, CI/CD", img: "/images/fintech_anomaly.png" },
-            { name: "Text-to-SQL Interface", category: "NLP & LLMs", tools: "LLM, Python, SQL", img: "/images/text_to_sql.png" },
-            { name: "Document Ingestion Pipeline", category: "Data Engineering", tools: "Apache Kafka, Vector Embeddings", img: "/images/document_ingestion.png" },
+            { name: "Multi-Agent AI Automation Platform", category: "LLM Agents & RAG", tools: "LangGraph, Python, RAG, SQLite, Docker", img: "/images/multi_agent.png" },
+            { name: "High-Throughput ML Inference Microservice", category: "MLOps & GPU Inference", tools: "NVIDIA Triton, Kubernetes, Kafka, Redis, Prometheus/Grafana", img: "/images/ml_inference.png" },
+            { name: "Financial Churn & Risk Prediction", category: "Predictive Modeling", tools: "Python, Scikit-learn, Pandas, MySQL, SQL", img: "/images/churn_prediction.png" },
+            { name: "Fintech Anomaly Detection", category: "Machine Learning", tools: "Python, LangChain, Docker, CI/CD", img: "/images/fintech_anomaly.png" },
+            { name: "Text-to-SQL Interface", category: "NLP & LLMs", tools: "Python, LangChain, LLM, SQL", img: "/images/text_to_sql.png" },
+            { name: "Document Ingestion Pipeline", category: "Data Engineering", tools: "Apache Kafka, Vector Embeddings, Python", img: "/images/document_ingestion.png" },
             { name: "MCP Audit", category: "Security & CLI Tools", tools: "Python, Typer, Pydantic, SARIF", img: "/images/mcp_audit.png", link: "https://github.com/chaaiitanya/mcp-audit" }
           ].map((project, index) => (
             <div className="work-box" key={index}>
