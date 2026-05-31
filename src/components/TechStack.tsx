@@ -1,27 +1,37 @@
 import "./styles/TechStack.css";
 
-const techItems = [
-  { name: "React", img: "/images/react2.webp" },
-  { name: "Next.js", img: "/images/next2.webp" },
-  { name: "Node.js", img: "/images/node2.webp" },
-  { name: "Express", img: "/images/express.webp" },
-  { name: "MongoDB", img: "/images/mongo.webp" },
-  { name: "MySQL", img: "/images/mysql.webp" },
-  { name: "TypeScript", img: "/images/typescript.webp" },
-  { name: "JavaScript", img: "/images/javascript.webp" },
+const categories = [
+  {
+    title: "ML & AI Frameworks",
+    skills: ["PyTorch", "TensorFlow", "HuggingFace Transformers", "Scikit-learn", "NVIDIA Triton", "TorchServe", "OpenCV"],
+  },
+  {
+    title: "GenAI & LLM Systems",
+    skills: ["LangGraph", "LangChain", "RAG", "Prompt Engineering", "Qdrant", "Chroma", "Multi-Agent Orchestration", "Tool Use / Function Calling"],
+  },
+  {
+    title: "Agent Evaluation & QA",
+    skills: ["LangSmith", "LLM-as-Judge", "KPI Design", "Benchmarking Pipelines", "Failure Mode Analysis", "TDD", "Pytest", "ROUGE / F1 / Hallucination Rate"],
+  },
+  {
+    title: "MLOps & Cloud Infrastructure",
+    skills: ["AWS", "Docker", "Kubernetes", "Kafka", "Redis", "GitHub Actions", "Prometheus", "Grafana"],
+  },
 ];
 
 const TechStack = () => {
   return (
     <div className="techstack">
       <h2>My Techstack</h2>
-      <div className="techstack-grid">
-        {techItems.map((tech) => (
-          <div key={tech.name} className="techstack-item">
-            <div className="techstack-logo">
-              <img src={tech.img} alt={tech.name} />
+      <div className="techstack-categories">
+        {categories.map((cat) => (
+          <div key={cat.title} className="techstack-category">
+            <div className="category-title">{cat.title}</div>
+            <div className="category-tags">
+              {cat.skills.map((skill) => (
+                <span key={skill} className="category-tag">{skill}</span>
+              ))}
             </div>
-            <span>{tech.name}</span>
           </div>
         ))}
       </div>

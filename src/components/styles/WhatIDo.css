@@ -34,7 +34,7 @@
 }
 .what-box-in {
   flex-direction: column;
-  height: 500px;
+  height: 700px;
   margin-left: 200px;
   position: relative;
   display: none;
@@ -46,21 +46,22 @@
   transition: 0.5s;
   /* border: 0.5px dashed rgba(255, 255, 255, 0.3); */
   position: relative;
-  padding: 50px;
+  padding: 30px 40px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .what-noTouch:hover,
 .what-content-active {
   min-height: 50%;
-  padding: 40px 50px;
+  padding: 24px 40px;
 }
 
 .what-noTouch:hover ~ .what-content,
 .what-box-in:hover .what-noTouch:not(:hover),
 .what-content.what-sibling {
   min-height: 25%;
-  padding: 10px 50px;
+  padding: 10px 40px;
 }
 .what-content h3 {
   font-size: 35px;
@@ -81,24 +82,7 @@
   opacity: 0.3;
 }
 .what-content-in {
-  opacity: 0;
-  animation: whatFlicker 0.5s 1 forwards;
-  animation-delay: 1s;
-}
-@keyframes whatFlicker {
-  0%,
-  25%,
-  35%,
-  60% {
-    opacity: 0;
-  }
-
-  30%,
-  50%,
-  40%,
-  100% {
-    opacity: 1;
-  }
+  opacity: 1;
 }
 .what-content::before,
 .what-corner::before,
@@ -199,14 +183,13 @@
   animation: whatBorders 1.2s 1 forwards;
 }
 .what-border2 svg {
-  height: 500px;
+  height: 700px;
   top: 50%;
   transform: translateY(-50%);
   position: absolute;
 }
 .what-content-in {
-  height: 100%;
-  overflow: hidden;
+  height: auto;
 }
 .what-content-in h5 {
   font-weight: 300;
@@ -292,11 +275,11 @@
     padding-bottom: 50px;
   }
   .what-box-in {
-    height: 500px;
+    height: 700px;
     margin-left: -50px;
   }
   .what-content {
-    padding: 50px;
+    padding: 30px;
     width: 500px;
   }
   .what-content p {
@@ -305,14 +288,14 @@
   .what-noTouch:hover,
   .what-content-active {
     min-height: 50%;
-    padding: 50px;
+    padding: 24px 30px;
   }
 
   .what-noTouch:hover ~ .what-content,
   .what-box-in:hover .what-noTouch:not(:hover),
   .what-content.what-sibling {
     min-height: 25%;
-    padding: 10px 50px;
+    padding: 10px 30px;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -328,7 +311,7 @@
     justify-content: left;
   }
   .what-box:last-child {
-    height: 500px;
+    height: 700px;
   }
   .what-box {
     width: 500px;

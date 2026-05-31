@@ -1,66 +1,62 @@
-.techstack-grid {
+.techstack-categories {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -30%);
+  transform: translate(-50%, -38%);
   display: grid;
-  grid-template-columns: repeat(4, 150px);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+  max-width: 920px;
+  width: 90%;
 }
 
-.techstack-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 14px;
-  padding: 28px 20px;
+.techstack-category {
+  padding: 24px 28px;
   border: 1px solid rgba(194, 164, 255, 0.18);
   border-radius: 12px;
-  cursor: default;
-  transition: border-color 0.3s, background-color 0.3s;
+  background-color: rgba(194, 164, 255, 0.03);
 }
 
-.techstack-item:hover {
-  border-color: var(--accentColor);
-  background-color: rgba(194, 164, 255, 0.06);
-}
-
-.techstack-logo {
-  width: 52px;
-  height: 52px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.techstack-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.techstack-item span {
-  font-size: 11px;
-  letter-spacing: 1.5px;
+.category-title {
+  font-size: 10px;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  color: rgba(234, 229, 236, 0.6);
-  text-align: center;
-  font-weight: 400;
+  color: var(--accentColor);
+  margin-bottom: 14px;
+  font-weight: 500;
 }
 
-@media screen and (max-width: 1400px) {
-  .techstack-grid {
-    grid-template-columns: repeat(4, 130px);
-    gap: 16px;
+.category-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.category-tag {
+  font-size: 12px;
+  padding: 3px 10px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  color: rgba(234, 229, 236, 0.7);
+  font-weight: 300;
+  letter-spacing: 0.4px;
+}
+
+@media screen and (max-width: 1300px) {
+  .techstack-categories {
+    max-width: 800px;
   }
 }
 
 @media screen and (max-width: 1100px) {
-  .techstack-grid {
-    grid-template-columns: repeat(4, 110px);
-    gap: 12px;
+  .techstack-categories {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    transform: translate(-50%, -45%);
   }
-  .techstack-item {
-    padding: 20px 14px;
+  .techstack h2 {
+    font-size: 50px;
+    top: 80px;
   }
 }
