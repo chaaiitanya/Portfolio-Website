@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLoading } from "../../context/LoadingProvider";
 import { setProgress } from "../Loading";
-import { setCharTimeline, setAllTimeline } from "../../utils/GsapScroll";
+import { setCharTimeline, setAllTimeline } from "../utils/GsapScroll";
 
 const Scene = () => {
   const { setLoading } = useLoading();
