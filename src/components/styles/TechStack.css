@@ -1,0 +1,66 @@
+.techstack-grid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  display: grid;
+  grid-template-columns: repeat(4, 150px);
+  gap: 20px;
+}
+
+.techstack-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 28px 20px;
+  border: 1px solid rgba(194, 164, 255, 0.18);
+  border-radius: 12px;
+  cursor: default;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.techstack-item:hover {
+  border-color: var(--accentColor);
+  background-color: rgba(194, 164, 255, 0.06);
+}
+
+.techstack-logo {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.techstack-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.techstack-item span {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(234, 229, 236, 0.6);
+  text-align: center;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1400px) {
+  .techstack-grid {
+    grid-template-columns: repeat(4, 130px);
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .techstack-grid {
+    grid-template-columns: repeat(4, 110px);
+    gap: 12px;
+  }
+  .techstack-item {
+    padding: 20px 14px;
+  }
+}
